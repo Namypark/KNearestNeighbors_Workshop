@@ -1,0 +1,20 @@
+[project]
+name = "knearestneighbors-workshop"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "kaleido>=1.5.0",
+    "matplotlib>=3.11.2",
+    "nbformat>=5.11.1",
+    "plotly>=7.1.0",
+    "scikit-learn>=1.9.1",
+    "seaborn>=0.13.2",
+    "ucimlrepo>=0.0.7",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.4.0",
+]
