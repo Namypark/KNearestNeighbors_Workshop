@@ -1,4 +1,9 @@
 # 🧑‍💻 K-Nearest Neighbors (KNN) Workshop
+## Group Members
+- **Name:** *Nnamdi* **Student ID:** *9085175*
+- **Name:** *Davisen* **Student ID:** *8899632*
+- **Name:** *Carlos* **Student ID:** *9118300*
+- **Name:** *Rangeetha* **Student ID:** *9081357*
 
 ## 📘 Workshop Summary
 This repository contains the materials and student solutions for the **K-Nearest Neighbors (KNN) Workshop**.  
