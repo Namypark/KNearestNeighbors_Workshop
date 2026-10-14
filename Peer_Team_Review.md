@@ -1,5 +1,12 @@
 ## Peer Programming Review of KNN Classification on Palmer Penguins
 
+> **Update note (13 October 2026):** Two issues raised in our original review were fixed by the peer team shortly afterwards. Our review was written at 21:12; their fix was committed at 21:23 ([commit 17133ed](https://github.com/ricardo-mohammed/k-nearest-neighbors/commit/17133ed)). The review below has been updated to reflect their latest version.
+>
+> | Original observation | Status |
+> |---|---|
+> | The EDA cell calls `inspect_penguins` before the dataset is loaded, so the notebook fails in a fresh session | ✅ **Fixed.** The data is now loaded before the EDA call. We re-ran their notebook from a fresh kernel and every cell executes without errors. |
+> | The peer-comparison section contains unfilled placeholders (`[Peer Name]`, `[Titanic / Weather / Other]`) | ✅ **Fixed.** The placeholders were replaced in the same commit with a full comparison against our Rice (Cammeo and Osmancik) project. |
+
 ### Overall assessment
 
 The peer team developed a well-structured K-nearest neighbours classifier for predicting penguin species. Its strongest implementation decision was combining preprocessing and classification in one pipeline and fitting that pipeline only on the training data.
