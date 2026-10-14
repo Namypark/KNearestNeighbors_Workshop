@@ -5,6 +5,19 @@
 - **Name:** *Carlos* **Student ID:** *9118300*
 - **Name:** *Rangeetha* **Student ID:** *9081357*
 
+## 📌 Summary of Our Work
+
+We applied K-Nearest Neighbors to the **Rice (Cammeo and Osmancik)** dataset from the UCI Machine Learning Repository, fetched through its API with `ucimlrepo`. The task is to classify 3,810 rice grains into two varieties using seven shape measurements extracted from images.
+
+After checking for missing values and duplicates, we encoded the target, made a stratified 80/20 train/test split, and scaled the features with `StandardScaler` fitted on the training set only. KNN with *k* = 5 reached **90.9% test accuracy** (693 of 762 grains), and an experiment without scaling dropped it to 86.5%, showing that scaling is essential for distance-based models. We then refactored the experiment into the **ML Pipeline Pattern** (one function per stage, chained by `run_pipeline`) and tuned *k*, the weighting, and the distance metric with scikit-learn's `Pipeline` and `GridSearchCV`. Tuning did not improve test accuracy: any *k* from 5 to 31 performs equally well within the noise.
+
+| File | Contents |
+|---|---|
+| [`KNN_Workshop_Solution.ipynb`](KNN_Workshop_Solution.ipynb) | Our solution: data acquisition, preprocessing, KNN training and evaluation, the ML pipeline, reflection, and peer comparison |
+| [`Peer_Team_Review.md`](Peer_Team_Review.md) | Our review of Group 3's Palmer Penguins KNN project |
+| [`docs/CSCN8010-KNearestNeighbors_Workshop.pdf`](docs/CSCN8010-KNearestNeighbors_Workshop.pdf) | Submission PDF with group members, student IDs, and the repository URL |
+| [`KNearestNeighbors_Workshop.ipynb`](KNearestNeighbors_Workshop.ipynb) | The instructor's original workshop notebook |
+
 ## 📘 Workshop Summary
 This repository contains the materials and student solutions for the **K-Nearest Neighbors (KNN) Workshop**.  
 The workshop introduces students to data analysis, machine learning design patterns, and active learning practices through the implementation of the KNN algorithm.
